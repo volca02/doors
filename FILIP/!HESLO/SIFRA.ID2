@@ -1,0 +1,63 @@
+uses dialogs, views, objects, app, drivers, crt, supply, msgbox, base;
+const
+  SIFRACommandOrigin                      =   200;
+
+type
+   PSIFRAData = ^TSIFRAData;
+   TSIFRAData = record
+               heslo                :  string[10];
+           end;
+
+
+function SIFRA(var _Data : TSIFRAData; _SetData : Boolean): Word;
+var
+  D    : PDialog;
+  C    : PView;
+  R    : TRect;
+  _DataPtr : PSIFRAData;
+begin
+  R.Assign(17,5,57,14);
+  D:=New(PDialog,Init(R,'›ifrov n¡ soubor–'));
+  with D^ do
+       begin
+          R.Assign(28,4,38,6);
+          C:=New(PButton,Init(R,'~O~k',cmOk,bfNormal));
+          Insert(C);
+
+          R.Assign(28,6,38,8);
+          C:=New(PButton,Init(R,'Zru¨it',cmCancel,bfNormal));
+          Insert(C);
+
+          R.Assign(10,4,22,5);
+          C:=New(PInputLine,Init(R,10));
+          Insert(C);
+
+          R.Assign(3,4,9,5);
+          C:=New(PStaticText,Init(R,'Heslo:'));
+          Insert(C);
+
+          R.Assign(5,2,35,3);
+          C:=New(PStaticText,Init(R,'Zadej heslo pro "            "'));
+          Insert(C);
+
+          SelectNext(False);
+       end;
+
+   _DataPtr:=@_Data;
+   if not _SetData then FillChar(_Data,SizeOf(_Data),0);
+   SIFRA:=Application^.ExecuteDialog(D,_DataPtr);
+end;
+
+var
+  g     : tsifradata;
+  fajl  : string;
+  f     : file;
+  i,o   : array [0..255] of char;
+  num,x : byte;
+begin
+  moje.init;
+  fajl:='d:\binec.txt';
+  if Prevod(g,true,fajl)=cmok then
+  begin
+  end;
+end.

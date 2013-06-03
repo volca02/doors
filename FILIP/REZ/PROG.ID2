@@ -1,0 +1,53 @@
+{********************************************************}
+{**          Zdrojov˜ k¢d dialogu                      **}
+{********************************************************}
+{**     Copyright    Shark Soft                        **}
+{**     Generoval    Petrik David                      **}
+{********************************************************}
+{**                  T V G e n                         **}
+{********************************************************}
+
+{************  Generov no v syntaxi TP 7.0  *************}
+
+
+type
+   PPROGData = ^TPROGData;
+   TPROGData = record
+               Data1                :  PCollection;
+               Data2                :  integer;
+           end;
+
+
+function PROG(var _Data : TPROGData; _SetData : Boolean): Word;
+var
+  D    : PDialog;
+  C    : PView;
+  SB   : PScrollBar;
+  R    : TRect;
+  _DataPtr : PPROGData;
+begin
+  R.Assign(8,1,48,20);
+  D:=New(PDialog,Init(R,'Vypis programu'));
+  with D^ do
+       begin
+          R.Assign(36,3,37,18);
+          SB:=New(PScrollBar,Init(R));
+          Insert(SB);
+          R.Assign(3,3,36,18);
+          C:=New(PListBox,Init(R,1,SB));
+          Insert(C);
+
+          R.Assign(7,2,32,3);
+          C:=New(PStaticText,Init(R,'Jmeno  Vlastnik  Velikost'));
+          Insert(C);
+
+          SelectNext(False);
+       end;
+
+   _DataPtr:=@_Data;
+   if not _SetData then FillChar(_Data,SizeOf(_Data),0);
+   PROG:=Application^.ExecuteDialog(D,_DataPtr);
+end;
+
+
+{ ****** Konec souboru vytvo©en‚ho programem TVGen 2.01 ****** }

@@ -1,0 +1,25 @@
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บ254               Alternativnก procesory 486 jinch vrobc–                  บ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+ pro z kladnก systmy. Vจechny procesory, kter jsme testovali, naprosto        
+ spolehliv fungovaly s nap jecกm naptกm 3.6V.                                 
+ ฺฤฤฤฤฤฤฤฤฟ                                                                     
+ ณ Cyrix  ณ    Jedin  firma, kter  "nepee" vlastnก kฉemกk. Je to n vrh ฉsk     
+ ภฤฤฤฤฤฤฤฤู    firma, kter  procesory vyvกjก, a vrobu na zak zku realizujก     
+ firmy IBM a SGS/Thomson. P–vodn Cyrix vyvกjel matematick koprocesory k 386,  
+ kter byly rychlejจก ne‘ Intelovsk. Pozdji vyvinul procesor 486SLC/DLC,      
+ kter vnitฉnก architekturou pฉipomกnal 486, ale zapojenก vvod– bylo jako u    
+ 386 (SLC jako 386SX a DLC jako 386DX). Spolen s implementacก 1 KB cache tak  
+ bylo mo‘no mกrnou modifikacก n vrhu z kladnกch desek dos hnout vyจจกho vkonu  
+ pฉi pฉกzniv cen (a z kaznกk–m bulกkovat, ‘e kupujก 486...).  Nechme sp t     
+ 386 na smetiจti djin a pojme k 486. Dnes Cyrix vyr bก "klasick" 486DX a     
+ DX2 (33 nebo 40 MHz, naptก 5V i 3V) vlastnกho n vrhu, kter se vyznaujก:     
+    - pomalejจก jednotka celoกseln aritmetiky ne‘ Intel                       
+    - rychlejจก koprocesor                                                      
+    - cache 8 KB schopn  pracovat v re‘imu write-back (opo‘dn z pis), co‘     
+      vrazn zlepจuje efektivitu a do velk mกry kompenzuje pomalejจก          
+      celoกselnou jednotku.                                                    
+ Procesor m  SMM re‘im a nepodporuje instrukci CPU ID.                          
+ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+บÝESCÞZptÝF1ÞPomocÝF2Þ€eจÝF3ÞListÝF4ÞTiskÝF5ÞHledÝF6ÞZnovuÝF7ÞHlMenuÝF10ÞKonecบ
+ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ

@@ -1,0 +1,973 @@
+.Topic NoContext=0
+ Zakladni obrazovka Ü
+ ßßßßßßßßßßßßßßßßßßßß
+ Zakladn¡ obrazovku tvo©¡ dva panely, kter‚ poskytuj¡ 
+ informace o aktualn¡m a dal¨¡m libovoln‚m adres ©i. Nad Panely
+ je um¡stˆna hlavn¡ nab¡dka, kter  se aktivuje stisknutim <F10>
+ v jejim pravem rohu jsou umisteny hodiny. Pod panely je umisten
+ povelovy radek a pod nim horizontalni nabidka funkci pozivanych
+ pro praci se soubory, s panely atd. 
+.Topic Doors
+ DOORS Ü
+ ßßßßßßß
+ Diskov˜ mana‘er, kter˜ m te zrovna p©ed sebou 
+   Program to©i : David Petr¡k
+		: Filip Volejn¡k 
+.Topic Left
+ Prace z levym panelem Ü
+ ßßßßßßßßßßßßßßßßßßßßßßß
+ {Vypnout/Zapnout:ShowHidePanel}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {Setrideni podle jmena:FileSort}
+ {Setrideni podle pripony:FileSort}
+ {Setrideni podle casu:FileSort}
+ {Setrideni podle velikosti:FileSort}
+ {Nesetrideno:FileSort}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {Vyber disku:ChooseDrive}
+.Topic Right
+ Prace z pravym panelem Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßß
+ {Vypnout/Zapnout:ShowHidePanel}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {Setrideni podle jmena:FileSort}
+ {Setrideni podle pripony:FileSort}
+ {Setrideni podle casu:FileSort}
+ {Setrideni podle velikosti:FileSort}
+ {Nesetrideno:FileSort}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {Vyber disku:ChooseDrive}
+.Topic FileMenu
+ Prace se soubory Ü
+ ßßßßßßßßßßßßßßßßßß
+ {Prohlizeni souboru:FileView}
+ {Editovani souboru:FileEdit}
+ {Kopirovani souboru:FileCopy}
+ {Prejmenovani souboru:FileRename}
+ {Vytvoreni adresare:Mkdir}
+ {Vymazani souboru:FileDelete}
+ {Prijem souboru:FileReceive}
+ {Obnoveni souboru:FileUndelete}
+ {Porovnani souboru:FileCompare}
+ {Konec:FileExit}
+.Topic DiskMenu
+ Prace z Disky Ü
+ ßßßßßßßßßßßßßßß
+ {Editace disku:DiskEdit}
+ {Mapa disku:DiskMap}
+ {Jmeno disku:DiskName}
+ {Informace o disku:DiskInfo}
+ {Parkovan¡ o disk–:DiskPark}
+ {Formatovani disket:DiskFormat}
+ {Kopirovani disket:DiskCopy}
+ {Porovnavani disket:DiskCompare}
+.Topic NetworkMenu
+ Prace ze siti Ü
+ ßßßßßßßßßßßßßßß
+ {Vypis prihlasenych uzivatelu:UserList}
+ {Odhl ¨en¡ od s¡tˆ:Logout}
+.Topic PanelsMenu
+ Panely Ü
+ ßßßßßßßß
+.Topic ToolsMenu
+ Nastroje Ü
+ ßßßßßßßßßß
+ {Kalendar:ToolsCalendar}
+ {Kalkulacka:ToolsCalc}
+ {ASCII tabulka:ToolsASCII}
+ {Informace o systemu:ToolsInfo}
+ {Nalezeni souboru:ToolsFindFile}
+ {Nadbytecne kopie:ToolsDupli}
+ {Maskove prikazy:ToolsMask}
+ {Datum a cas:ToolsDateTime}
+ {Ovladace zarizeni:Drivers}
+ {Rezidentni antiviry:Antivirs}
+ {Rezidentni programy:TSRPrograms}
+ {Pou‘it‚ p©¡kazy:UsedCommands}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {CDROM prehravac:CDPlayer}
+.Topic ConfigurationMenu
+ Konfigurace Ü
+ ßßßßßßßßßßßßß
+ {Syst‚m:ConfigSystem}
+ {›e©i‡:SetScreenSaver}
+ {Mys:Mouse}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {Cestina:Czech}
+ {Klavesnice:Keyboard}
+ {Barvy:Color}
+ {Paleta:Palette}
+ {Mys:Mouse}
+ {Sifrovani:Crypt}
+ {Obrazovy mod:ScreenMode}
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ {Ulozeni nastaveni:SaveOption}
+
+.Topic FileView
+ Prohlizeni souboru Ü
+ ßßßßßßßßßßßßßßßßßßßß
+ Tato volba umoznuje prohlizet soubor na kterem je umisten 
+ soubor.
+ Na nektere typy souboru budou automaticky vyvolany specialni
+ prohlizece. Jsou to :
+  - Graficke soubory (BMP,PCX)
+
+ Pokud chcete na prohlizene soubory zavolat vyhradne
+ standartni prohlizec pouzijte povel <Alt><F3>
+
+ Stiskem funkcni klavesy F3 lze mˆnit zp–sob zobrzen¡
+ soubor (Norm ln¡, Hexadecim ln¡, {Instruk‡ni:InstructionFile}
+.Topic FileCopy
+ Kopirovani souboru Ü
+ ßßßßßßßßßßßßßßßßßßßß
+.Topic FileRename
+ Presouvani souboru Ü
+ ßßßßßßßßßßßßßßßßßßßß
+.Topic MkDir
+ Vytvoreni adresare Ü
+ ßßßßßßßßßßßßßßßßßßßß
+ Tento povel umoznuje v aktualnim adresari zalozit novy
+ podadresar musi byt zadano platne jmeno adresare 
+ a adresar dosud nesmi existovat po vytvoreni adresare bude 
+ kurzor presunut na nove vytvoreny adresar.
+ U jmena adresare lze specifikovat disk i cestu jiz existujiciho
+ adresare.
+ 
+.Topic FileDelete
+ Vymazani souboru Ü
+ ßßßßßßßßßßßßßßßßßß
+.Topic FileReceive
+ Prijem souboru Ü
+ ßßßßßßßßßßßßßßßß
+.Topic FileUndelete
+ Obnoveni souboru Ü
+ ßßßßßßßßßßßßßßßßßß
+.Topic FileCompare
+ Porovnani souboru Ü
+ ßßßßßßßßßßßßßßßßßßß
+.Topic FileCrypt.
+ Sifrovani souboru Ü
+ ßßßßßßßßßßßßßßßßßßß
+.Topic FileGetSize
+ Zjistovani velikosti Ü
+ ßßßßßßßßßßßßßßßßßßßßßß
+.Topic FileAttribs
+ Atributy Ü
+ ßßßßßßßßßß
+.Topic FileDateTime
+ Datum a cas Ü
+ ßßßßßßßßßßßßß
+.Topic FileConvert
+ Prevod narodnich znaku Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßß
+.Topic FileExit
+ Ukonceni programu Ü
+ ßßßßßßßßßßßßßßßßßßß
+ Tato volba zpusobi ze ukoncite diskovy manager {DOORS:Doors}
+ a vratite se do nadrizeneho procesu.
+.Topic DiskEdit
+ Editace disku Ü
+ ßßßßßßßßßßßßßßß
+.Topic DiskMap
+ Mapa disku Ü
+ ßßßßßßßßßßßß
+.Topic DiskName
+ Jmeno disku Ü
+ ßßßßßßßßßßßßß
+ P©¡kaz umo‘nuje zjistit a modifikovat jm‚no aktualn¡ho
+ disku. Lze je pu‘¡t pro lok ln¡ (tedy nikoliv s¡Ÿove) 
+ a z rove¤ fyzick‚ disky. Nem–‘e tedy b˜t pou‘it pro
+ logick‚ disky vytvo©en‚ dosovsk˜mi p©¡kazy SUBTS,
+ JOIN nebo ASSIGN.
+ Proto‘e jm‚no disku je na disk zaps no vlastnˆ
+ v podobˆ specialn¡ho souboru nesm¡ obsahovat znaky,
+ kter‚ nejsou povoleny pro jm‚na soubor–. Nesm¡ nav¡c
+ obsahovat te‡ku. Jm‚no disku m–‘e b˜t a‘ dvan ct
+ znak– dlouh‚.
+.Topic DiskPark
+ Parkovan¡ disk– Ü
+ ßßßßßßßßßßßßßßßßß
+ Pevn˜ disk (naz˜van˜ t‚‘ winchester) je nejchoulostivˆj¨¡
+ sou‡ st¡ po‡¡ta‡e. Obsahuje velmi jemnou a citlivou z znamovou 
+ mechaniku, kter  m–‘e b˜t lehce po¨kozena i sebemen¨¡m n razem 
+ (utr‘en¡ z znamov˜ch hlav z lo‘isek). Proto obsahuje pevn˜ disk 
+ takzvanou parkovac¡ z¢nu, ve kter‚ je v¡ce chr nˆn proti n raz–m.
+ Do t‚to parkovac¡ z¢ny je nutn‚ hlavy pevn‚ho disku vystavit v‘dy
+ p©ed vypnut¡m po‡¡ta‡e. Modern¡ pevn‚ disky b˜vaj¡ ji‘ vybaveny
+ autoparkov n¡m. Jejich hlavy jsou vystaveny do parkovac¡ z¢ny p©i 
+ vypnut¡ po‡¡ta‡e automaticky.                                                        
+                                                                              
+ Tuto funkci lze vyvolat volbou Parkov n¡ disk– v nab¡ce Disk. 
+                                                                              
+ Je  dobr˜m zvykem funkci parkov n¡ vyvol vat v‘dy p©ed vypnut¡m 
+ po‡¡ta‡e pro p©¡pad, ‘e pevn˜ disk nen¡ vybaven autoparkov n¡m 
+ nebo ‘e autoparkov n¡ nefunguje spr vnˆ.                                     
+
+.Topic DiskInfo
+ Informace o disku Ü
+ ßßßßßßßßßßßßßßßßßßß
+.Topic DiskFormat
+ Formatovani diskety Ü
+ ßßßßßßßßßßßßßßßßßßßßß
+.Topic DiskCopy
+ Kopiravani diskety Ü
+ ßßßßßßßßßßßßßßßßßßßß
+.Topic DiskCompare
+ Porovnavani disket Ü
+ ßßßßßßßßßßßßßßßßßßßß
+.Topic CDPlayer
+ CD prehravac Ü
+ ßßßßßßßßßßßßßßßßß
+.Topic UserList
+ Vypis prihlasenych uzivatelu Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+ Tato funkce slouzi na vypis vsech prihlasenych uzivatelu 
+ v pocitacove siti (Novell). Jmena uzivatelu jsou abecedne
+ setridena prvni cislo znamena cislo prihlaseni,dale nasleduje
+ jmeno uzivatele potom datum a cas prihlaseni.
+
+                 [ 25 PetrikDa.Sps.SPSE ACDEF01H 32-LIS-97 13:25 ]
+ Cislo pripojeni ÄÄÙ          ³            ³             ³
+ Prihlasovaci jmeno ÄÄÄÄÄÄÄÄÄÄÙ            ³             ³
+ Hex ID ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ             ³
+ Datum a cas prihlaseni ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Jednotlive uzivatele lze uznacit pomoci klavesi "Insert"
+ Tlacitkem "Poslat zpravu" muzete poslat zpravu uzivateli
+ na kterem je kurzor nebo vsem oznacenym.
+
+.Topic Logout
+ Odhl ¨en¡ u‘ivatele od s¡tˆ Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+ Tato slu‘ba uzav©e v¨echny otev©en‚ soubory, odhl s¡
+ stanici od v¨ech servr–, odpoj¡ stanici od v¨ech
+ servr– kromˆ implicitn¡ho. Potom p©imapuje jednotku
+ do adres ©e SYS:LOGIN na implicitn¡m servru.
+.Topic ShowHidePanel
+ Vypnuti/Zapnuti panelu Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßß
+ Umozni zkryt nebo zobrazit panel
+.Topic ChooseDrive
+ V˜bˆr disku Ü
+ ßßßßßßßßßßßßß
+ Umo‘¤uje zvolit novou diskovou jednotku ve zvolen‚m panelu
+ P©¡kaz vyvol me buƒ prost©ednictv¡m menu nebo kombinac¡
+ kl ves <Alt-F1> pro lev˜ panel ‡i <Alt-F2> pro prav˜
+ panel
+
+.Topic FileSort
+ Trideni souboru Ü
+ ßßßßßßßßßßßßßßßßß
+ Seznam soubor– a adres ©– v souborov‚m oknˆ m–‘e b˜t set©¡dˆn
+ podle jmen soubor–, p©¡pon soubor–, velikosti soubor– a podle
+ data posledn¡ modifikace. P©¡slu¨n˜ zp–sob t©¡dˆn¡ lze vybrat
+ volbou Set©¡dˆn¡ podle ... v nab¡dce "Lev˜" -> "Lev˜ panel"
+ nebo "Prav˜" -> "Prav˜ panel" nebo stisknut¡m my¨i na p©¡slu¨n‚m 
+ nadpisu v souborov‚m oknˆ.
+                                                               
+ Pokud vyberete volbu "Neset©¡dˆno", bude seznam  
+ zobrazen ve stejn‚m uspo© d n¡ jak by jej vypsal p©¡kaz DIR
+ opera‡n¡ho syst‚mu.
+.Topic CompareDirectories
+ Porovanani dvou adresaru Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßß
+ K vyu‘it¡ t‚to funkce mus¡ b˜t oba panely zapnuty. 
+ P©i vyvol n¡ tohoto povelu se zobraz¡ okno kde si lze
+ nastavit krit‚ria pro porovn van¡
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 1) Porovnt vat ‡as
+ 2) Porovn vat velikost
+ 3) Porovn vat atributy
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ 1) Ozna‡ovat soubory
+ 2) Ru¨it ozna‡en¡
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+ Automaticky se porovn vaj¡ pouze jm‚na a ostatn¡ podle v mi
+ zvolen˜ch parametr–. V obou panelech budou ozna‡eny (odzna‡eny)
+ v¨echny soubory dan‚ho panelu, kter‚ se nenach zej¡ v souborov‚m oknˆ 
+ druh‚ho panelu a naopak.
+.Topic ToolsCalendar
+ Kalendar Ü
+ ßßßßßßßßßß
+ Kalendar lze vyvolat volbou kalendar v nabidce nastroje
+ Po vyvolani je zobrazen velmi jednoduchy kalendar. Pro
+ listovani mezi jednotlivymi mesici lze vyuzit sipky
+ nahoru a dolu na klavesnici nebo mysi
+.Topic ToolsCalc
+ Kalkulacka Ü
+ ßßßßßßßßßßßß
+ Kalkulacku lze vyvolat volbou kalkulacka v nabidce nastroje.
+ Po vyvolani je zobrazena jednoducha kalkulacka umoznujici
+ provadet zakladni matematicke operace. Pro jeji obsluhu lze 
+ pouzit jak klavesnici tak mys. Kalkulacka se zrusi stisknutim
+ klavesy <ESC> nebo kliknutim mysi na uzaviraci ikone okna.
+.Topic ToolsASCII
+ ASCII tabulka Ü
+ ßßßßßßßßßßßßßßß
+ pri vyvolani teto funkce se vam zobrazi ASCII tabulka
+ (American standart code for information interchange)
+ V tabulce se lze pohybovat jak misi tak i klavesnici.
+ Po vybrani vami zvoleneho znaku se zobrazi v hornim radku
+ Decimalni vyjadreni ASCII znaku, hexadecimalni a binarni
+ po stisknuti klavesi ENTER lze vybrany znak vlozit
+ do textu
+.Topic ToolsInfo
+ Informace o systemu Ü
+ ßßßßßßßßßßßßßßßßßßßßß
+.Topic ToolsFindFile
+ Nalezeni souboru Ü
+ ßßßßßßßßßßßßßßßßßß
+.Topic ToolsDupli
+ Nadbytecne kopie Ü
+ ßßßßßßßßßßßßßßßßßß
+.Topic ToolsMask
+ Maskove prikazy Ü
+ ßßßßßßßßßßßßßßßßß
+.Topic ToolsDateTime
+ Datum a cas Ü
+ ßßßßßßßßßßßßß
+.Topic TSRPrograms
+ Rezidentni programy Ü
+ ßßßßßßßßßßßßßßßßßßßßß
+ Tato funkce zobraz¡ informace o v¨ech nainstalovan˜ch
+ ovlada‡¡ch za©¡zen¡ a jsou vyps ny v tomto tvaru
+ 
+          [0DE4   15 920 MSCDEX    Program     /D:MSCD001 /E /M:8]
+            ³        ³     ³          ³                ³
+ Segmentova Adresa   ³     ³          ³                ³
+ Velikost (Byte) ÄÄÄÄÙ     ³          ³                ³
+ Nazev dat ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ          ³                ³
+ Typ dat ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ                ³
+ Parametry p©i spu¨tˆn¡ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+ Segmentov  adresa : Zp–soby adresov n¡
+ Typ dat	   : a) Program
+                     b) Ovlada‡ za©¡zen¡
+                     c) Prost©ed¡ dosu
+                     d) Data
+                     c) Voln  pamˆŸ
+.Topic Drivers
+ Ovladace Zarizeni Ü
+ ßßßßßßßßßßßßßßßßßßß
+ Tato funkce zobrazi informace o vsech nainstalovanych 
+ ovladacich zarizeni a jsou vypsany v tomto tvaru :
+
+                    [ 000010 EMMXXXX0 C000 4800 5b00 ]
+                        ³       ³      ³    ³    ³
+ Fyzicka adresa ÄÄÄÄÄÄÄÄÙ       ³      ³    ³    ³
+ Nazev ovladace ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ      ³    ³    ³
+ Atributy zarizeni ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ    ³    ³
+ Ofsetova adresa rutiny STRATEGY ÄÄÄÄÄÄÄÄÄÄÄÙ    ³
+ Ofsetova adresa rutiny INTERUPT ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+     
+ Atributy zarizeni :
+ Cislo bitu
+     0: 1 = standartni zarizeni vstupu 
+     1: 1 = standartni zarizeni vystupu
+     2: 1 = standartni nulove zarizeni
+     3: 1 = casove zarizeni
+     6: 1 = podporuje logicke zarizeni
+    11: 1 = otevri/zavri/RM
+    13: 1 = blokove zarizeni jine nez IBM
+    14: 1 = podporuje IOCTL
+    15: 1 = znakove zarizeni  0 = blokove
+ 
+ Charakteristicke ovladace :
+  'EMSXXXX0' - ovladac pameti EMS
+  'SMARTAAR' - ovladc diskove cache
+  
+.Topic Antivirs
+ Nastaveni rezidentnich antivru Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+ Tato funkce slouzi k nastaveni rezidentich antiviru :
+     1) AVGSYS.EXE - Antivirovy system AVG 5.0 - GRYSOFT (r)
+     2) VSAFE .EXE - Central point antivirus
+
+  1) AVGSYS.EXE
+  Monitorovani :
+   [ ] Kontrola z pisu do syst‚mov˜ch oblasti
+   [ ] Kontrola otev©en¡ EXE/COM souboru pro zapis
+   [ ] Kontrola p©ejmenov n¡ EXE/COM souboru
+  Testy :
+   [ ] Antivyrov˜ test spou¨tˆn˜ch souboru
+   [ ] Antivirov˜ test otev¡ran˜ch souboru
+   [ ] Antivirov˜ test boot sektoru disket
+  Ostatni :
+   [ ] Kontrola diskety po stisku CTRL-ALT-DEL
+   [ ] Hl ¨en¡ o prob¡haj¡cich testech
+   [ ] Zvukov  signalizace
+   [ ] Test pameti pri inicializaci
+   [ ] Hl ¨en¡ na obrazovku i v grafickem rezimu
+   [ ] Alokace XMS pameti pro ulozeni dat driveru
+   [ ] Nastaven¡ nov˜ch obluh po inicializaci site
+   [ ] Kontrola tunelovan¡ vektor– INT 13 a INT 21
+
+  Vyznam jednotlivych nastaveni se doctete v
+  dokumentaci k programu AVG.50
+
+ 2) VSAFE.EXE
+   [ ] Ochrana proti formatovan¡
+   [ ] Ochrana proti rezidentum
+   [ ] Generalni ochrana proti zapisu
+   [ ] Kontrola spustitelnych souboru
+   [ ] Ochrana proti boot sectorovym virum
+   [ ] Ochrana boot sectoru hardisku
+   [ ] Ochrana boot sektoru diskety
+   [ ] Ochrana zapisu do spustitelnych souboru
+
+  Vyznam jednotlivych nastaveni se doctete v
+  dokumentaci k programu VSAFE.EXE
+.Topic UsedCommands
+ Pou‘it‚ p©¡kazy Ü
+ ßßßßßßßßßßßßßßßßß
+.Topic ConfigSystem
+ Nastaven¡ syst‚mu Ü
+ ßßßßßßßßßßßßßßßßßßß
+ Zobrazovat hodiny
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 
+  Na z kladn¡ obrazovce se v prav‚m horn¡m rohu
+  objev¡ hodiny s aktu ln¡m ‡asem
+ Zobrazovat typ kl vesnice
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 
+  Na z kladn¡ obrazovce se v prav‚m horn¡m rohu
+  objev¡ aktu ln¡ typ kl vesnice
+   CZ - €esk  kl vesnice
+   EN - Angilck  kl vesnice
+ Zobrazovat skryt‚ soubory
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 
+  Ve v˜pisu soubor– se budou zobrazovat skryt‚
+  soubory
+ Verifikace z pisu na disk
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ 
+  Po zapnut¡ t‚to volby se nastav¡ syst‚mov 
+  promˆn  verifi ( Dosovsk˜ p©¡kaz VERIFI ON )
+  a ve¨ker˜ z pis na disk bude kontrolov n.
+.Topic Czech
+ Cestina Ü
+ ßßßßßßßßß
+.Topic keyboard
+ Klavesnice Ü
+ ßßßßßßßßßßßß
+.Topic Color
+ Nastaven¡ barev Ü                                            
+ ßßßßßßßßßßßßßßßßß                                            
+ Pokud V m nevyhovuj¡ barvy {DOORS:Doors}, m–‘ete si nastavit
+ sv‚ vlastn¡. Barvy se nastavuj¡ pro ka‘dou n¡‘e uvedenou
+ skupinu zvl ¨Ÿ:
+
+    1) Nab¡dka         = Roletov‚ menu a spodn¡ horizont ln¡ menu
+    2) Panely          = Oba panely a v˜pis komprimovan‚ho souboru
+    3) Dialogy         = V¨echny dialogy a hl ¨en¡
+    4) Editor          = Okna v editoru a v prohl¡‘e‡i
+    5) N povˆda        = Tato n povˆda
+    6) Prikazova radka = Prikazova radka
+ 
+ Ka‘d  skupina obsahuje dal¨¡ polo‘ky. U ka‘d‚ polo‘ky m–‘ete
+ zvolit barvu, kterou bude zobrazov na. Ta se skl d  z jedn‚ z
+ 16 barev pozad¡ a z jedn‚ z 16 barev pop©ed¡ na grafick˜ch 
+ adapt‚rech EGA, VGA nebo ze 4 mo‘nost¡ zobrazen¡ (norm ln¡,
+ rozsv¡cen‚, podtr‘en‚, inverzn¡) na adapt‚ru Hercules.
+
+ Vlastn¡ v˜bˆr konkr‚tn¡ barvy provedete n sledovnˆ:
+ 
+ 1) Zvol¡te skupinu a polo‘ku u kter‚ chcete nastavovat barvu.   
+ 2) Kurzorov˜mi kl vesami vyberete p©¡slu¨nou barvu pop©ed¡      
+ a pozad¡.                                                        
+ 3) Toto opakujete pro dal¨¡ skupiny a polo‘ky, jejich‘
+ barvy chcete zmˆnit.                                            
+ 4) Dialog ukon‡¡te tla‡¡tkem Û Konec Û.                        
+ Mana‘er ihned zmˆn¡ ur‡en‚ barvy.                               
+ 5) Pokud chcete V mi vybran‚ nastaven¡ barev uchovat
+ i pro dal¨¡ spu¨tˆn¡ Mana‘eru, vyvolejte povel
+ Ulo‘en¡ konfigurace.
+ 6) Pokud se chcete vr tit k standardn¡mu nastaven¡ barev,
+ stisknˆte tla‡¡tko Û Standard Û a pot‚ ukon‡ete dialog
+.Topic Palette
+ Paleta Ü
+ ßßßßßßßß
+.Topic Mouse
+ Nastaven¡ my¨i Ü 
+ ßßßßßßßßßßßßßßßß 
+ Tento povel umo‘¤uje nastavit ‡asov˜ interval v nˆm‘ dva stisky
+ my¨i jsou ch p ny jako dvoj¡ stisknut¡ (double click) a
+ umo‘¤uje zamˆnit tla‡¡tka my¨i (vhodn‚ pro lev ky).
+.Topic Confirmation
+ Potvrzeni Ü
+ ßßßßßßßßßßß
+.Topic Crypt
+ Sifrovani Ü
+ ßßßßßßßßßßß
+.Topic SetScreenSaver
+ ›et©i‡ Ü
+ ßßßßßßßß
+ ›et©i‡ obrazovky slou‘¡ k ochranˆ va¨eho monitoru a z rove¤ k
+ pobaven¡ a kratochv¡li.                                      
+                                                              
+ "N hodn˜" ¨et©i‡ pou‘¡v  n hodnˆ nˆkter˜ z ostatn¡ch zh ¨e‡–. 
+ "’ dn˜" ¨et©i‡ znamen , ‘e zhas¡n n¡ obrazovky je vypnut‚.    
+
+ Tla‡¡tkem "Test" si m–‘ete vyzkou¨et zvolen˜ typ ¨et©i‡e.    
+
+ Numerick  hodnota "›et©en¡ obrazovky" definuje po‡et minut od  
+ posledn¡ akce kl vesnice nebo my¨i do spu¨tˆn¡ ¨et©i‡e.        
+
+ ›et©i‡ lze t‚‘ p©i pr ci v {Doors:Doors} okam‘itˆ spustit kdykoli
+ t¡m, ‘e kurzorem my¨i uk ‘ete do prav‚ho horn¡ho rohu obrazovky
+ (¨et©i‡ nesm¡ b˜t vypnut˜ polo‘kou "‘ dn˜" a mus¡ b˜t nastaven 
+ nenulov˜ ‡as pro "›et©en¡ obrazovky").                         
+
+.Topic ScreenMode
+ Obrazovy mod Ü
+ ßßßßßßßßßßßßßß
+.Topic SaveOption
+ Ulozeni Nastaveni Ü
+ ßßßßßßßßßßßßßßßßßßß
+ Timto povelem se ulozi vami zvolena konfigurace
+ do souboru DRS.CFG. Jsou ukladany tyto udaje:                      
+                                                                  
+  - £pln‚ £daje o obou panelech                                   
+  - £daje nadefinovan‚ ve volbˆ prost©ed¡                         
+  - nastaven˜ zp–sob k¢dov n¡ ‡esk˜ch znak–                       
+  - nastaven‚ typy kl vesnic                                      
+  - nastaven‚ {barvy:Color}
+  - nastavenou paletu barev
+  - nastaven‚ parametry {my¨i:Mouse}                                      
+  - nastaven  konfigurace editoru                                 
+                                                                  
+ —daje jsou automaticky na‡teny p©i spu¨tˆn¡ {Doors:Doors}.
+.Topic About
+ O programu Ü
+ ßßßßßßßßßßßß
+ Zobrazi informace o firme a tvurcich programu.
+ Po stisknuti tlacitka Podekovani se zobrazi jmena lidi,
+ kterym dekujeme ze pomohli aby vzniknul tento diskovy manager.
+.Topic InstructionFile
+ Instruk‡n¡ soubor Ü
+ ßßßßßßßßßßßßßßßßßßß
+ {Registry procesoru:Registers}
+
+ {Aritmetick‚ instrukce:AritmeticInstr}
+ {Instrukce posun– a rotac¡:RotInstr}
+ {Instrukce p©enosu dat:MovInstr}
+ {Instrukce ©¡zen¡ bˆhu programu:RunInstr}
+ {Funkce ©¡zen¡ procesoru:ProcesorFunction}
+ {Instrukce ©¡zen¡ ochrany:ProtectedInstr}
+ {Instrukce pro pr ci z ©etˆzci:StringInstr}
+.Topic Registers
+ Registry procesoru Ü
+ ßßßßßßßßßßßßßßßßßßßß
+
+             ÚÄÄ  Pouze 386 a vy¨¨¡ procesory
+             ³ 
+         31     16 15      0
+         ÚÄÄÄÄÄÄÄÄÄÂÄÄÄÄÂÄÄÄÄ¿
+         ³         ³ AH ³ Al ³
+ EAX     ³         ÃÄÄÄÄÁÄÄÄÄ´ Accumulator - St©ada‡
+         ³         ³    AX   ³
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+         ³         ³ BH ³ Bl ³
+ EBX     ³         ÃÄÄÄÄÁÄÄÄÄ´ Base
+         ³         ³    BX   ³
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+         ³         ³ CH ³ Cl ³
+ ECX     ³         ÃÄÄÄÄÁÄÄÄÄ´ Counter - €¡ta‡
+         ³         ³    CX   ³
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+         ³         ³ DH ³ Dl ³
+ EDX     ³         ÃÄÄÄÄÁÄÄÄÄ´ Data
+         ³         ³    DX   ³
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+ ESI     ³         ³    SI   ³ Zdrojov˜ index
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+ EDI     ³         ³    DI   ³ C¡lov˜ index
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+ EBP     ³         ³    BI   ³ Base pointer
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+ ESP     ³         ³    SP   ³ Ukazatel do z sobn¡ku
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+ EIP     ³         ³    IP   ³ Ukazatel na prov dˆnou instrukci
+         ÃÄÄÄÄÄÄÄÄÄÅÄÄÄÄÄÄÄÄÄ´
+ EFLAGS  ³         ³  FLAGS  ³ Registr p©¡znak–
+         ÀÄÄÄÄÄÄÄÄÄÁÄÄÄÄÄÄÄÄÄÙ
+ 
+                   ÚÄÄÄÄÄÄÄÄÄÄÄ¿
+               CS  ³           ³ K¢dov˜ segment
+                   ÃÄÄÄÄÄÄÄÄÄÄÄ´
+               DS  ³           ³ Datov˜ segment
+                   ÃÄÄÄÄÄÄÄÄÄÄÄ´
+               ES  ³           ³ Extra segment
+                   ÃÄÄÄÄÄÄÄÄÄÄÄ´
+               FS  ³ Pouze 386 ³ Ä¿  Nov‚ segmnetov‚ registry
+                   ÃÄÄÄÄÄÄÄÄÄÄÄ´  ÃÄ pro v¨eobecn‚ pou‘it¡
+               GS  ³ Pouze 386 ³ ÄÙ
+                   ÃÄÄÄÄÄÄÄÄÄÄÄ´
+               SS  ³           ³ Segment z sobn¡ku
+                   ÀÄÄÄÄÄÄÄÄÄÄÄÙ
+
+     Registr p©¡znak– :
+     ÚÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄÂÄÄÄ¿
+     ³ ± ³ ± ³ ± ³ ± ³ O ³ D ³ I ³ T ³ S ³ Z ³ ± ³ A ³ ± ³ P ³ ± ³ P ³ 
+     ÀÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÁÄÄÄÙ   
+                                                          
+     Overflow Flag ÄÄÄÄÙ   ³   ³   ³   ³   ³       ³       ³      ³
+     Direction Flag ÄÄÄÄÄÄÄÙ   ³   ³   ³   ³       ³       ³      ³
+     Interrupt Flag ÄÄÄÄÄÄÄÄÄÄÄÙ   ³   ³   ³       ³       ³      ³
+     Trap Flag ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ   ³   ³       ³       ³      ³
+     Sing Flag ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ   ³       ³       ³      ³
+     Zero Flag ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ       ³       ³      ³
+     Auxiliary Carry Flag ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ       ³      ³
+     Parity flag ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ      ³
+     Carry flag ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ 
+
+OF - vlajka p©ete‡en¡. Nastavena p©i p©ete‡en¡ aritmetick‚ operace, je-li       
+     v˜sledek operace vˆt¨¡ ne‘ c¡lov  hodnota.                                 
+DF - vlajka smˆru.  Nastavena pro autodekrement u ©etˆzcov˜ch operac¡, nulov na 
+     pro autoinkrement                                                          
+IF - povolen¡ p©eru¨en¡. Je-li 1, p©eru¨en¡ je povoleno, jinak zak z no.        
+     Nemaskovateln‚ p©eru¨en¡ nelze zak zat.                                    
+TF - Trasov n¡.  Pou‘¡v  se u lad¡c¡ch program–.  Je-li nastavena, vyvol  se po 
+     ka‘d‚ instrukci INT 3.                                                     
+SF - vlajka znam‚nka - nejvy¨¨¡ bit v˜sledku. Jin˜mi slovy S=0 pro kladn  ‡¡sla 
+     a S=1 pro z porn .                                                         
+ZF - p©¡znak nuly. Je nastavena, kdy‘ v˜sledek je nulov˜.                       
+AC - pomocn  vlajka p©enosu. Nastavena, je-li p©enos z doln¡ poloviny 8 nebo    
+     16-bitov‚ho ‡¡sla. Slou‘¡ hlavnˆ pro aritmetiku v bin rnˆ k¢dovan‚m        
+     des¡tkov‚m k¢du.                                                           
+PF - vlajka parity. Nastavena p©i sud‚m po‡tu bit– v˜sledku.                    
+CF - vlajka p©enosu. Slou‘¡ pro p©enos mezi ‡¡sly o v¡ce slovech.               
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic AritmeticInstr
+ Aritmetick‚ instrukce Ü
+ ßßßßßßßßßßßßßßßßßßßßßßß
+
+  ADD dest,src          sou‡et dvou operand–, v˜sledek do dest
+                         dest(src + dest)
+  ADC  dest,src         sou‡et dvou operand– s p©enosem z p©edchoz¡ho ADD
+                         dest(src + dest + CF)
+  INC  dest             p©i‡ti 1 do dest (reg nebo r/m)
+                         dest(dest+1)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  SUB  dest,src         ode‡ti src od dest, v˜sledek v dest                       
+                         dest(dest - src)                                        
+  SBB  dest,src         ode‡ti s podte‡en¡m (ve vlajce CF) z p©edchoz¡ho SUB      
+                         dest((dest - src) - CF)                                 
+  DEC  dest             ode‡ti 1 od dest (reg nebo r/m)
+                         dest(dest - 1)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  CMP  dest,src         porovnej (nedestruktivn¡ ode‡ten¡)
+                         nastav¡ vlajky p©enosu, p©ete‡en¡ atd.
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  NEG  dest             zmˆna znam‚nka operandu
+                         dest(0 - dest);
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  AAA                   korekce po ASCII s‡¡t n¡
+                         AL(AL opraveno na ASCII s‡¡t n¡)
+  AAS                   korekce po ASCII od‡¡t n¡
+                         AL(AL opraveno na ASCII)
+  AAM                   korekce po ASCII n soben¡
+                         AH:AL(AH:AL opraveno na ASCII n soben¡)
+  AAD                   korekce p©ed ASCII dˆlen¡m
+                         AH:AL(AH:AL p©ipraveno pro dˆlen¡ ASCII k¢d–)
+  DAA                   korekce po BCD s‡¡t n¡
+                         AL(AL opraveno na BCD s‡¡t n¡)
+  DAS                   korekce po BCD od‡¡t n¡
+                         AL(AL opraveno na BCD od‡¡t n¡)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  MUL src               n soben¡ AL(AX) hodnotou bez znam‚nka (reg/mem)
+                         AX(AL * src8)
+                         DX:AX(AX * src16)
+  IMUL src              n soben¡ AL(AX) hodnotou se znam‚nkem (reg/mem)
+                         AX(AL * immed8)
+                         DX:AX(AX * immed16)
+  IMUL reg16,r/m,immed  n soben¡ reg/mem 16-bitovou p©¡mou hodnotou se znam‚nkem
+                         reg16(r/m8 * immed)
+                         reg16(r/m16 * immed)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  DIV  src              dˆlen¡ st©ada‡e hodnotou bez znam‚nka (reg/mem)
+                        Dˆlen¡ 0 nebo p©¡li¨ velk˜ v˜sledek zp–sob¡ INT 0.
+                         AL(AX ö src8); AH(AX MOD src8)
+                         AX(DX:AX ö src16); DX(DX:AX MOD src16)
+  IDIV src              dˆlen¡ st©ada‡e hodnotou bez znam‚nka (reg/mem)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  CBW                   p©eveƒ byte na slovo (znam‚nkov‚ roz¨¡©en¡ AL do AH)
+                         AH(naplnˆn bitem 7 z AL)
+  CWD                   p©evod slova na dvojslovo (znam‚nkov‚ roz¨¡©en¡ AX do DX)
+                         DX(nplnˆn bitem 15 z AX)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  AND  dest,src         logick˜ sou‡in AND (nuluje bity dest, kter‚ jsou 0 v src)
+                         dest(dest & src)
+  TEST dest,src         nedestruktivn¡ AND (bitov˜ test; JZ sko‡¡, nen¡-li shoda)
+                         flags(nastaveny jako pro AND)
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  OR   dest,src         logick˜ sou‡et OR (nastav¡ bity dest, kter‚ jsou 1 v src)
+                         dest(dest | src)                                        
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                              
+  XOR  dest,src         vylu‡ovac¡ OR (p©eklop bity dest, kter‚ jsou 1 v src)     
+                         dest(dest ^ src)                                        
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                              
+  NOT  dest             vytvo© jedni‡kov˜ komplement (p©eklop v¨echny bity v dest)
+                       dest(~dest)                                             
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic RotInstr
+ Instrukce bitov˜ch p©enos– a rotac¡ Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+  SHL/SAL dest,count  Shift Logical Left / Shift Arithmrtic Left                  
+          Aritmetick˜ posun doleva.                   CF ® dest ® 0               
+          Count m–‘e b˜t buƒ 1 nebo registr CL.                                   
+          Je-li po‡et v CL, bere se modulo 32. Instrukce s po‡tem 1 je daleko     
+          rychlej¨¡, tak‘e se vyplat¡ pro men¨¡ po‡ty posun–/rotac¡ pou‘¡t        
+          nˆkolik instrukc¡ s po‡tem 1 m¡sto jedn‚ instrukce s po‡tem v CL.       
+  SAR dest,count      Shift Arithmetic Right                                      
+          Aritmetick˜ posun doprava.                  SF ¯ dest ¯ CF              
+          Count m–‘e b˜t buƒ 1 nebo registr CL.                                   
+  SHR dest,count      Shift Logical Right                                         
+          Logick˜ posun doprava.                      0 ¯ dest ¯ CF               
+          Count m–‘e b˜t buƒ 1 nebo registr CL.                                   
+  RCR dest,count      Rotate through Carry Right  ÚÄ¯ dest ¯ CF ¯ÄÄ¿
+          Rotace p©es carry doprava.              ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ              
+          Count m–‘e b˜t buƒ 1 nebo registr CL.
+  RCL dest,count      Rotate through Carry Left   ÚÄ® dest ® CF ®ÄÄ¿
+          Rotace p©es carry doleva.               ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ              
+          Count m–‘e b˜t buƒ 1 nebo registr CL.                                   
+  ROR dest,count      Rotate Right                ÚÄ¯ dest ¯ÄÂÄ CF
+          Rotace doprava.                         ÀÄÄÄÄÄÄÄÄÄÄÙ                    
+          Count m–‘e b˜t buƒ 1 nebo registr CL.                                   
+  ROL dest,count      Rotate Left                  CF ÄÂÄ® dest ®Ä¿              
+          Rotace doleva.                                ÀÄÄÄÄÄÄÄÄÄÄÙ              
+          Count m–‘e b˜t buƒ 1 nebo registr CL.                                   
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic MovInstr
+ Instrukce p©enosu dat Ü
+ ßßßßßßßßßßßßßßßßßßßßßßß
+
+  MOV  dest,src        p©enes (kop¡ruj) data z/do registru, do/z pamˆti           
+                        destsrc                                                  
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  XCHG dest,src        p©ehoƒ hodnoty dvou registr– nebo registru a r/m           
+                        dest  src                                                
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  IN   port8 (nebo DX) vstup do AL (nebo AX) z I/O portu                          
+                        byte: ALport                                             
+                        word: AL[port]; AH[port+1]                              
+  OUT  port8 (nebo DX) v˜stup z AL (nebo AX) do I/O portu                         
+                        byte: [port]AL                                           
+                        word: [port]AL [port+1]AH                               
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  XLAT                 p©evede AL na hodnotu v p©ekladov‚ tabulce na adrese BX    
+                        ALES:[BX+(AL)]                                           
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LEA  reg16,addr      na‡ti adresu do registru                                   
+                         reg16(v˜sledek v˜po‡tu efektivn¡ adresy addr offset)    
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                                
+  LDS  reg16,mem       na‡ti DS a reg16 z pamˆŸov‚ promˆnn‚                       
+                        reg16[mem16]; DS[mem16+2]                               
+  LES  reg16,mem       na‡ti ES a reg16 z pamˆŸov‚ promˆnn‚                       
+                        reg16[mem16]; ES[mem16+2]                               
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LAHF                 na‡ti/p©eveƒ vlajky do AH                                  
+  SAHF                 ulo‘/p©eveƒ AH na vlajky                                   
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  PUSH src             p©enes reg16 nebo r/m16 do stacku                          
+                        SP-=2; SS:[SP]src                                        
+  PUSH immed           p©enes immed16 (nebo znam‚nkovˆ roz¨¡©en‚ immed8)do stacku.
+                        SP-=2; SS:[SP]immed16 
+  PUSHA                PUSH ALL: kop¡ruje obecn‚ registry do stacku.
+                        SP-=10H; AX,BX,CX,DX,SI,DI,BP,SP ulo‘eno ve stacku        
+  PUSHF                PUSH Flags: p©enes registr vlajek do stacku                
+                        SP-=2; SS:[SP]flags                                      
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                                  
+  POP  dest            p©enes ze stacku do reg16 nebo r/m16 nebo segreg           
+                        destSS:[SP]; SP+=2                                       
+  POPA                 POP All: kop¡ruj obecn‚ registry ze stacku.  İ286Ş         
+                        SP+=10H; AX,BX,CX,DX,SI,DI,BP vr ceny ze stacku           
+  POPF                 POP Flags: p©enos ze stacku do registru vlajek             
+                        flagsSS:[SP]; SP+=2                                      
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic RunInstr
+ Instrukce ©¡zen¡ bˆhu programu Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+  JMP     kam     nepodm¡nˆn˜ skok na adresu                                      
+                  short: IP(IP+(znam‚nkovˆ roz¨¡©en˜ 8-bitov˜ displacement))     
+                  near : IP(IP+(displacement c¡le))                              
+                  indirect: IP(registr nebo hodnota v pamˆti)                    
+                  far  : CSsegment c¡le; IPofset c¡le                           
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  JCXZ    short   skok, je-li CX==0                                               
+  LOOP    short   CX  (CX - 1) a skok, jestli‘e CX != 0                          
+  LOOPE/  short   CX  (CX - 1) a skok, jestli‘e CX != 0 && ZF == ZR == 1         
+   LOOPZ                                                                          
+  LOOPNE/ short   CX  (CX - 1) a skok, jestli‘e CX != 0 && ZF == NZ == 0         
+   LOOPNZ                                                                         
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  Jcond   short   skok, je-li splnˆna podm¡nka cond                               
+                   IP  (IP + (8-bitov˜ displacement znam‚nkovˆ roz¨¡©en˜ na 16)) 
+  JA/JNBE short   skok, je-li podte‡en¡ nebo ((CF & ZF)==0                        
+                  po bezznam‚nkov‚ aritmetice
+  JAE/JNB short   skok je-li podte‡en¡ nebo rovno (CF == NC == 0 po bezznam‚nkov‚ 
+                  aritmetice
+  JB/JC   short   skok, je-li men¨¡/skok, je-li vlajka Carry nastavena (CF==CY==1)
+  JE/JZ   short   skok, je-li rovno (ZF==ZR==1)
+  JG/JNGE short   skok, je-li vˆt¨¡ (SF==(OF & ZF) po znam‚nkov‚ aritmetice)      
+  JGE/JNL short   skok, je-li vˆt¨¡ nebo rovno (SF==OF po znam‚nkov‚ aritmetice)  
+  JL/JNGE short   skok, je-li men¨¡ (ZF != OF po znam‚nkov‚ aritmetice)           
+  JLE/JNG short   skok, je-li men¨¡ nebo rovno (SF!=OF || ZF==0 po aritmetice     
+                  se znam‚nkem
+  JNC     short   skok, nen¡-li nastavena vlajka p©enosu (CF==NC==0)              
+                (stejn‚ jako JAE/JNB)
+  JNE/JNZ short   skok, nen¡-li rovno (ZF==NZ==0)                                 
+  JNO     short   skok, nen¡-li p©ete‡en¡ (OF==NO==0)                             
+  JNP/JPO short   skok p©i lich‚ paritˆ  (PF==PO==0: po‡et jedni‡ek je lich˜)     
+  JNS     short   skok, nen¡-li znam‚nko (SF==PL==0)                              
+  JO      short   skok p©i p©ete‡en¡ (OF==OV==1)                                  
+  JP/JPE  short   skok p©i sud‚ paritˆ (PF==PE==1 po‡et jedni‡ek je sud˜)         
+  JS      short   skok p©i znam‚nku (SF==NG==1)                                   
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  BOUND   reg16,limits   provede kontrolu mez¡ reg16. 'limits' je adresa 2-slovn¡ 
+          tabulky s po‘adovan˜m minim ln¡m a maxim ln¡m limitem. Pouze  İ286Ş     
+             if (reg16 < DS:[limits]) nebo (reg16 > DS:[lmts + 2]) then INT 5     
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ENTER   frmsiz,frms   nastav¡ z sobn¡kov˜ r mec pro vy¨¨¡ jazyk. Pou‘¡v  se jako
+          prvn¡ instrukce ve volan‚ procedu©e. Pouze İ286Ş . Funguje takto:       
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LEAVE   Odstran¡ efekt ENTER. Pou‘ijte tˆsnˆ p©ed RET. Vrac¡ SP a BP na hodnoty 
+          v okam‘iku  ENTER. P©esnˆji ©e‡eno:                                     
+           MOV SP,BP                                                            
+           POP BP                                                               
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                                
+  INT n   provede softwarov‚ p©eru¨en¡ (vol n¡ syst‚mov‚ funkce)                  
+                    PUSHF; IF  0; TF  0;
+                    PUSH CS; PUSH IP
+                    IP 0000:[n * 4]; CS  0000:[(n * 4) + 2]
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  INTO    Je-li OF == OV == 1, pak proveƒ INT 4
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  IRET    N vrat z p©eru¨en¡. Ve skute‡nosti je provedeno:
+                    POP IP; POP CS; POPF
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic ProcesorFunction
+ Funkce ©¡zen¡ procesoru Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßß
+ 
+  CLC         nuluje vlajku p©enosu CF                               (CF0)       
+  CMC         komplement (p©eklopen¡ hodnoty) vlajky p©enosu         (CF ~CF)    
+  STC         nastav vlajku p©enosu                                  (CF1)       
+  CLD         nuluje vlajku smˆru (smˆr nahoru) p©ed ©etˆzcov˜mi     (DF0)       
+              operacemi                                                           
+  STD         nastav¡ vlajku smˆru (smˆr dol–)                       (DF1)       
+  CLI         zak ‘e maskovateln‚ hardwarov‚ p©eru¨en¡               (IF0)       
+  STI         povol¡ maskovateln‚ hardwarov‚ p©eru¨en¡               (IF1)       
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  CLTS        Nuluje vlajku p©ep¡n n¡ £loh. Pouze İ286Ş.             (TF1)       
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  HLT         Zastav¡ ‡innost (prov d¡ NOP a‘ do p©¡chodu p©eru¨en¡)              
+  WAIT/FWAIT  €ek  na aktivaci vstupu TEST (synchronizace s koprocesorem)         
+  LOCK        (prefixov  instrukce) zabr n¡ koprocesoru p©¡stup ke sbˆrnici pro   
+              n sleduj¡c¡ instrukci                                               
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  SEG segreg  (prefixov  instrukce) zmˆna implicitn¡ho segmentov‚ho registru      
+              v n sleduj¡c¡m v˜po‡tu efektivn¡ adresy                             
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic ProtectedInstr
+ Instrukce ©¡zen¡ ochrany Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßß
+  V¨echny instrukce na t‚to str nce jsou specifick‚ pro İ286Ş  (nejsou implemento-
+  v ny na 8088/86). 
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LGDT src       Load Global Descriptor Table                                     
+                 Na‡ti glob ln¡ tabulku deskriptor– ze 6-bytov‚ tabulky na adrese 
+                 src                                                              
+  SGDT dest      Store Global Descriptor Table                                    
+                 Ulo‘ 6-bytovou glob ln¡ tabulku deskriptor– do pamˆti na adrese  
+                 dest                                                             
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ                                                                                
+  LIDT src       Load Interrupt Descriptor Table                                  
+                 Na‡ti tabulku deskriptor– p©eru¨en¡ ze 6-bytov‚ tabulky na adrese
+                 src                                                              
+  SIDT dest      Store Interrupt Descriptor Table                                 
+                 Ulo‘ tabulku deskriptor– p©eru¨en¡ do pamˆti na adrese dest      
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LLDT src       Load Local Descriptor Table                                      
+                 Na‡ti lok ln¡ tabulku deskriptor– (selektor GDT) z registru nebo 
+                 pamˆti16                                                         
+  SLDT dest      Store Local Descriptor Table                                     
+                 Ulo‘ registr lok ln¡ tabulky deskriptor– do dest (r/m16)         
+  LMSW src       Load Machine Status Word                                         
+                 Na‡ti stavov‚ slovo procesoru (pou‘¡v  se pro vstup do chr nˆn‚ho
+                 re‘imu)                                                          
+  SMSW src       Store Machine Status Word                                        
+                 Ulo‘ stavov‚ slovo do reg/mem16                                  
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LTR  src       Load Task Register                                               
+                 Na‡ti registr £lohy (selektor GDT) z reg/mem16                   
+  STR  dest      Store Task Register                                              
+                 Ulo‘ registr £lohy do reg/mem16                                  
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LAR  dest,src  Load with Access Rights                                          
+                 Napl¤ horn¡ byte dest p©¡stupov˜mi pr vy deskriptoru src         
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LSL  dest,src  Load with Segment Limit                                          
+                 Napl¤ dest segmentov˜m limitem deskriptoru src                   
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  ARPL lvl       Adjust Requested Privilege Level                                 
+                 Nastav po‘adovanou £rove¤ privilegovanosti na vy¨¨¡ nebo lvl     
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  VERR seg       Nastav vlajku ZF, jestli‘e £loha ‡etla privilegia ze segmentu seg
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  VERR seg       Nastav¡ ZF na ZR, jestli‘e m  £loha privilegium z pisu do segmen-
+                 tu seg                                                           
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic StringInstr
+ Instrukce pro pr ci z ©etˆzci Ü
+ ßßßßßßßßßßßßßßßßßßßßßßßßßßßßßßß
+
+  CLD                  nuluj vlajku smˆru (nahoru)                   (DFUP0)    
+                       nastav  (Delta) na pozitivn¡.                             
+  STD                  nastav vlajku smˆru (dol–)                    (DFDN1)    
+                       nastav  (Delta) na negativn¡                              
+  REP/REPE/REPZ        (prefixov  instrukce) opakuj: prov d¡ instrukci opakovanˆ  
+                        CX  (CX - 1); operace se opakuje a‘ do splnˆn¡ podm¡nky  
+                        n sleduj¡c¡ instrukce nebo CX == 0                        
+  REPNE/REPNZ          (prefixov  instrukce) opakuj: u‘ite‡n‚ pro operace CMPS    
+                       a SCAS                                                     
+                        ZF  0; CX  (CX - 1); operace se opakuje dokud plat¡     
+                         ( CX != 0 a z rove¤ ZF == 0)                             
+  MOVSB                kop¡ruj ©etˆzec byt– (slov)     (byte:=1, word:=2)       
+  MOVSW                 ES:[DI]  DS:[SI]; DI += ; SI +=                        
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  LODSB                na‡ti byte (slovo) ©etˆzce do AL(AX)                       
+                        AL  DS:[SI]; SI+=1;                                      
+  LODSW                 AX  DS:[SI]; SI+=2;                                      
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  STOSB                ulo‘ byte (slovo) do ©etˆzce                               
+                        ES:[DI]  AL; DI += 1;                                    
+  STOSW                 ES:[DI]  AX; DI += 2;                                    
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  CMPSB                porovnej ©etˆzce byt– (slov)   (byte:=1, word:=2)        
+  CMPSW                 flags  (v˜sledek CMP DS:[SI],ES:[DI]); DI += ; SI +=   
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  SCASB                najdi byte (slovo) v ©etˆzci                               
+                        flags  (v˜sledek CMP ES:[DI],AL); DI += 1                
+  SCASW                 flags  (v˜sledek CMP ES:[DI],AX); DI += 2                
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  INSB                 ‡ten¡ bytu (slova) z portu do ©etˆzce (byte:=1, word:=2) 
+  INSW                                                           Pouze  İ286Ş     
+                        ES:[DI](byte/word z portu DX); DI += ;                  
+  ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+  OUTSB                v˜stup bytu (slova) z ©etˆzce do portu (byte:=1, word:=2)
+  OUTSW                                                          Pouze İ286Ş      
+                        [port DX]DS:[SI]; SI+=;                                 
+
+{Instruk‡n¡ soubor:InstructionFile}
+.Topic FileEdit=65534
+ Editovani souboru Ü
+ ßßßßßßßßßßßßßßßßßßß
